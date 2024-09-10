@@ -142,3 +142,13 @@ a.button{
     
     
   }
+  .button-post{
+    background-color: #0284c7;
+    color: #fff;
+    border-radius: 4px;
+    padding: 4px 16px 4px 16px;
+    border-width: 0px;
+    cursor: pointer;
+    height: 28px;
+  }
+
