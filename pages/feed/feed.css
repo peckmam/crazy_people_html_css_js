@@ -41,6 +41,80 @@ header{
     display: inline;
     font-size: 1.4rem;
 }
+#notification-icon a{
+    color: #fff;
+}
+#container-notifications{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: -30px;
+    width: 50vw;
+    max-width: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    filter: drop-shadow(2px 2px 4px #27252565);
+    z-index: 1;
+    color: #000;
+}
+.card-notifications-title{
+    display: flex;
+    gap: 5px;
+}
+.card-notification-photo{
+    display: inline;
+    position: relative;
+}
+.profile-icon-notification .profile-ball-notification{
+    background-color: #22ad5c;
+    border: 2px solid #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 9px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#arrow-container-notifications{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 25px;
+
+}
+#notification-icon a:hover #container-notifications, #notification-icon a:hover #arrow-container-notifications{
+    display: flex;
+}
+.card-notification-buttons{
+    display: flex;
+    justify-content: center;
+}
+.button-cancel{
+    background-color: #fff;
+    color: #0284c7;
+    border: 1px solid #0284c7;
+    border-radius: 4px;
+    padding: 4px 16px 4px 16px;
+    cursor: pointer;
+    height: 28px;
+    
+  }
+  .card-notifications{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .card-notification-name{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .card-notification-body{
+    font-size: 0.8rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 #notification-ball{
     background-color: #fff;
     border: 2px solid #000;
@@ -111,7 +185,7 @@ textarea{
     flex: 1;
     font-weight: bold; 
     margin-left: 15px;
-    border: 1px solid #c00;
+    border: 1px ;
 }
 .container-post-text{
     font-size: 1rem;
